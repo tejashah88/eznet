@@ -1,0 +1,122 @@
+[
+  {
+    "id": "8c8fc3fe-03a8-4f00-9a45-7f6751ac752d",
+    "data": [
+      {
+        "text": "top traffic in the past ",
+        "userDefined": false
+      },
+      {
+        "text": "30 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "9f2ffc5c-a8a4-41dc-9a19-9ee2ce168701",
+    "data": [
+      {
+        "text": "most popular apps in the last ",
+        "userDefined": false
+      },
+      {
+        "text": "48 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "c200f3d9-9e86-4519-9b17-707223a15c20",
+    "data": [
+      {
+        "text": "top sites last ",
+        "userDefined": false
+      },
+      {
+        "text": "72 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "54e443e4-b8d9-48e9-a876-cb3d5f3eabc1",
+    "data": [
+      {
+        "text": "what sites have the highest traffic on my network in the previous ",
+        "userDefined": false
+      },
+      {
+        "text": "13 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "be7f0015-74ac-4113-bd54-93eb4fc55ea5",
+    "data": [
+      {
+        "text": "list top traffic in ",
+        "userDefined": false
+      },
+      {
+        "text": "36 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "1428c85b-84eb-4f38-868a-cbc6a59cc24e",
+    "data": [
+      {
+        "text": "list of top websites in the past ",
+        "userDefined": false
+      },
+      {
+        "text": "2 days",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "4d67d749-23e0-4d68-8c56-0cbc443360b7",
+    "data": [
+      {
+        "text": "what apps have the highest traffic in the past ",
+        "userDefined": false
+      },
+      {
+        "text": "2 weeks",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

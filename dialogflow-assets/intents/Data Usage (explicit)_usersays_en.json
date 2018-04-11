@@ -1,0 +1,345 @@
+[
+  {
+    "id": "ceaa36b4-2c80-44f5-a7c0-9d00ee6e15b8",
+    "data": [
+      {
+        "text": "total data usage",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " in my ",
+        "userDefined": false
+      },
+      {
+        "text": "Pennsylvania",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network over ",
+        "userDefined": false
+      },
+      {
+        "text": "48 seconds",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "0cc3d490-515d-4ae5-823c-e9cfbdcc0ee7",
+    "data": [
+      {
+        "text": "grand",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "total data usage",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " over ",
+        "userDefined": false
+      },
+      {
+        "text": "30 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": false
+      },
+      {
+        "text": " in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Docler",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "e5aac736-c883-435a-91f9-7872e9835324",
+    "data": [
+      {
+        "text": "overall ",
+        "userDefined": false
+      },
+      {
+        "text": "data usage",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " on my ",
+        "userDefined": false
+      },
+      {
+        "text": "MatlabIsAwesome",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network over ",
+        "userDefined": false
+      },
+      {
+        "text": "36 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "70a22827-d058-4d2f-983b-d9d1f90524a2",
+    "data": [
+      {
+        "text": "total data usage",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " in past ",
+        "userDefined": false
+      },
+      {
+        "text": "24 days",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      },
+      {
+        "text": " on my ",
+        "userDefined": false
+      },
+      {
+        "text": "Arduino",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "4eab4151-8fa8-4107-acf3-cbcc04b75c08",
+    "data": [
+      {
+        "text": "how much data have my clients in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Water Tribe",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network used over ",
+        "userDefined": false
+      },
+      {
+        "text": "72 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "4e3ce932-e3ff-4636-8b93-360a40d98a4f",
+    "data": [
+      {
+        "text": "amount of data consumed since ",
+        "userDefined": false
+      },
+      {
+        "text": "40 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": false
+      },
+      {
+        "text": " in my ",
+        "userDefined": false
+      },
+      {
+        "text": "Facebook",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "bb76f61b-29fc-4de6-88cc-488ee6a34d0d",
+    "data": [
+      {
+        "text": "total data usage",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Water Bottle",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network over ",
+        "userDefined": false
+      },
+      {
+        "text": "24 seconds",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "6ead2f9d-3c6b-4772-8062-895e12585eae",
+    "data": [
+      {
+        "text": "total data usage",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " in the past ",
+        "userDefined": false
+      },
+      {
+        "text": "30 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      },
+      {
+        "text": " on my ",
+        "userDefined": false
+      },
+      {
+        "text": "Alexa Skill",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "5ff5ba08-12cb-4a51-8e59-60cf2d0f67dc",
+    "data": [
+      {
+        "text": "grand",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " overall usage on ",
+        "userDefined": false
+      },
+      {
+        "text": "Google Fi",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network for the past ",
+        "userDefined": false
+      },
+      {
+        "text": "5 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "559fbeb7-5cba-487c-b731-bedfa948dab0",
+    "data": [
+      {
+        "text": "total data usage",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " in past ",
+        "userDefined": false
+      },
+      {
+        "text": "3 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      },
+      {
+        "text": " in the ",
+        "userDefined": false
+      },
+      {
+        "text": "OctaBytes",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

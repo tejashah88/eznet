@@ -1,0 +1,72 @@
+{
+  "id": "d0a6c2c9-3ca5-4944-8e0a-f247cc21fdb7",
+  "name": "Block Site (explicit)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "blockSite",
+      "affectedContexts": [
+        {
+          "name": "network",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "7bff815d-20b5-4b11-b135-0e86645af63e",
+          "required": true,
+          "dataType": "@sys.url",
+          "name": "urls",
+          "value": "$urls",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What are the url(s)?"
+            },
+            {
+              "lang": "en",
+              "value": "What\u0027s the url(s)?"
+            }
+          ],
+          "isList": true
+        },
+        {
+          "id": "1e6f3ecb-5744-4e32-b6b2-ecaf1d9771ca",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "network",
+          "value": "$network",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "For which network?"
+            },
+            {
+              "lang": "en",
+              "value": "Which network?"
+            }
+          ],
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1516360926,
+  "fallbackIntent": false,
+  "events": []
+}

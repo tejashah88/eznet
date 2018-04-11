@@ -1,0 +1,200 @@
+[
+  {
+    "id": "fe88552e-991f-472d-a7e7-4e6880309a6c",
+    "data": [
+      {
+        "text": "list the devices in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Sandbox 2",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523402938
+  },
+  {
+    "id": "3fc80476-d223-4e60-8fc8-a7a5463da6d0",
+    "data": [
+      {
+        "text": "list devices in ",
+        "userDefined": false
+      },
+      {
+        "text": "Sandbox 2",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523402938
+  },
+  {
+    "id": "3920789f-48a6-4a92-8188-dcec4d288fab",
+    "data": [
+      {
+        "text": "list of devices on the ",
+        "userDefined": false
+      },
+      {
+        "text": "test",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": false
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523402938
+  },
+  {
+    "id": "25323d06-0895-4985-9f66-2b1c87d61a9d",
+    "data": [
+      {
+        "text": "show all devices on the ",
+        "userDefined": false
+      },
+      {
+        "text": "Haven",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1523402938
+  },
+  {
+    "id": "31a3f62d-6641-4336-b649-660bba44e828",
+    "data": [
+      {
+        "text": "list of devices on the ",
+        "userDefined": false
+      },
+      {
+        "text": "Google Text",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523402938
+  },
+  {
+    "id": "53a69846-dc67-430b-b898-3ab264e1a507",
+    "data": [
+      {
+        "text": "list all the devices in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Meraki Live Sandbox",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523402938
+  },
+  {
+    "id": "c7450dcd-08d2-4c1a-9086-1d265cae1489",
+    "data": [
+      {
+        "text": "tell me all the devices on the ",
+        "userDefined": false
+      },
+      {
+        "text": "Google Test",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1523402938
+  },
+  {
+    "id": "968f06a7-d54e-4651-988f-0591c1ec5d50",
+    "data": [
+      {
+        "text": "list all devices on the ",
+        "userDefined": false
+      },
+      {
+        "text": "Facebook Sandbox",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523402938
+  },
+  {
+    "id": "9f86c247-0f20-47fb-8dc5-db4fe1f8df04",
+    "data": [
+      {
+        "text": "show all devices in the ",
+        "userDefined": false
+      },
+      {
+        "text": "BPN Tech",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": false
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523402938
+  }
+]

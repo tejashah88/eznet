@@ -1,0 +1,208 @@
+[
+  {
+    "id": "a732b7bc-360c-49ff-bc4f-60fc8cb3ac83",
+    "data": [
+      {
+        "text": "top sites last ",
+        "userDefined": false
+      },
+      {
+        "text": "72 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Walabot",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "242186b1-b350-4ff3-a966-eb9694fb643a",
+    "data": [
+      {
+        "text": "list top traffic in ",
+        "userDefined": false
+      },
+      {
+        "text": "36 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      },
+      {
+        "text": " in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Walmart",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "b2e3a770-5eef-47f9-80df-4a4a12b61fbf",
+    "data": [
+      {
+        "text": "most popular apps on the ",
+        "userDefined": false
+      },
+      {
+        "text": "AndroidIsAwesome",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network in the last ",
+        "userDefined": false
+      },
+      {
+        "text": "48 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "423c16fd-b63d-4e89-8e91-43569741ca83",
+    "data": [
+      {
+        "text": "what apps have the highest traffic in the past ",
+        "userDefined": false
+      },
+      {
+        "text": "2 weeks",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      },
+      {
+        "text": " in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Read Write Sandbox",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "6d324a6c-ed9d-4ad2-ba1b-2718c4389193",
+    "data": [
+      {
+        "text": "what sites have the highest traffic on my ",
+        "userDefined": false
+      },
+      {
+        "text": "Read Write",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network in the previous ",
+        "userDefined": false
+      },
+      {
+        "text": "13 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "1fd74796-b59e-45c0-8c1a-764be3ed8b24",
+    "data": [
+      {
+        "text": "list of top websites on my ",
+        "userDefined": false
+      },
+      {
+        "text": "Sublime Text",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network over the past ",
+        "userDefined": false
+      },
+      {
+        "text": "2 days",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "bc789ae9-c4a9-411f-9de0-3f89ce85bd71",
+    "data": [
+      {
+        "text": "top traffic in the past ",
+        "userDefined": false
+      },
+      {
+        "text": "30 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": false
+      },
+      {
+        "text": " in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Facebook",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1516436534
+  }
+]

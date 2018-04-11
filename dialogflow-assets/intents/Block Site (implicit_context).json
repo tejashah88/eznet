@@ -1,0 +1,56 @@
+{
+  "id": "dc01fba4-f491-42cf-841b-bc45e172cf4f",
+  "name": "Block Site (implicit/context)",
+  "auto": true,
+  "contexts": [
+    "network"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "blockSite",
+      "affectedContexts": [
+        {
+          "name": "network",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "781fdb0a-8163-46e4-994f-1e4b1617717d",
+          "required": true,
+          "dataType": "@sys.url",
+          "name": "urls",
+          "value": "$urls",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What\u0027s the url(s)?"
+            },
+            {
+              "lang": "en",
+              "value": "What are the url(s)?"
+            }
+          ],
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1509352683,
+  "fallbackIntent": false,
+  "events": []
+}

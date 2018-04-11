@@ -1,0 +1,62 @@
+[
+  {
+    "id": "5a55607e-26f7-43b6-9980-6b65a9dc13c1",
+    "data": [
+      {
+        "text": "devices on my network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523383858
+  },
+  {
+    "id": "5f25453d-cf99-47f4-bf0e-7e6fdb40d8ff",
+    "data": [
+      {
+        "text": "all devices on my network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523383858
+  },
+  {
+    "id": "393461ba-32a9-42b7-9507-7bdc475968c1",
+    "data": [
+      {
+        "text": "tell me all the devices on my network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523383858
+  },
+  {
+    "id": "48dfc09a-1efc-454d-ada1-e82dfb22c410",
+    "data": [
+      {
+        "text": "list all devices in the current network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523383858
+  },
+  {
+    "id": "86d31ba3-fbd5-4ce9-8b17-7d2ebd5a4091",
+    "data": [
+      {
+        "text": "show me all devices on this network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1523383858
+  }
+]

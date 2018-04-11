@@ -1,0 +1,165 @@
+[
+  {
+    "id": "39dba056-0099-4814-8cc7-97481e5cd9c8",
+    "data": [
+      {
+        "text": "total data usage",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " in past ",
+        "userDefined": false
+      },
+      {
+        "text": "3 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "a638ee57-7c7b-4ede-bf03-2727a1266c2a",
+    "data": [
+      {
+        "text": "grand",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " overall usage in past ",
+        "userDefined": false
+      },
+      {
+        "text": "5 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "e2b5ee4d-dc2a-4a30-aa55-10d1352ac0e1",
+    "data": [
+      {
+        "text": "total data usage in the past ",
+        "userDefined": false
+      },
+      {
+        "text": "30 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "ac807ab5-a077-4357-86a9-3cbb58378ba3",
+    "data": [
+      {
+        "text": "total data usage over ",
+        "userDefined": false
+      },
+      {
+        "text": "48 seconds",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "9093fbb7-863c-4b07-8577-21649c83c21a",
+    "data": [
+      {
+        "text": "amount of data consumed since ",
+        "userDefined": false
+      },
+      {
+        "text": "40 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "53ea7443-96bd-43e5-911a-8c305853de49",
+    "data": [
+      {
+        "text": "how much data have my clients used over ",
+        "userDefined": false
+      },
+      {
+        "text": "72 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "a6c92dca-706c-4fee-8da0-d2009a2c6ae8",
+    "data": [
+      {
+        "text": "total data usage over ",
+        "userDefined": false
+      },
+      {
+        "text": "24 days",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "0ec172e8-3b8e-4a25-ba54-ac2cecac4d2c",
+    "data": [
+      {
+        "text": "overall data usage over ",
+        "userDefined": false
+      },
+      {
+        "text": "36 hours",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "ef5989b4-8f99-4f23-9877-582e2fe1c42d",
+    "data": [
+      {
+        "text": "overall data usage over ",
+        "userDefined": false
+      },
+      {
+        "text": "30 minutes",
+        "alias": "time-duration",
+        "meta": "@sys.duration",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

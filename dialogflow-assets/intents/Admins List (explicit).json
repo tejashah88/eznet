@@ -1,0 +1,54 @@
+{
+  "id": "81eecbb9-21ec-4be9-93c6-0864690454e6",
+  "name": "Admins List (explicit)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "listAdmins",
+      "affectedContexts": [
+        {
+          "name": "organization",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "f0fcaa7e-94df-4f08-85a7-89703b838585",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "org",
+          "value": "$org",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which organization?"
+            },
+            {
+              "lang": "en",
+              "value": "For which organization?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1509352496,
+  "fallbackIntent": false,
+  "events": []
+}

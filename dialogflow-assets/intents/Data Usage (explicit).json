@@ -1,0 +1,72 @@
+{
+  "id": "39cbbd2a-6230-4473-92ea-21ac264f8276",
+  "name": "Data Usage (explicit)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "dataUsage",
+      "affectedContexts": [
+        {
+          "name": "network",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "10e16967-56c7-40fd-a539-44e369ad0b37",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "network",
+          "value": "$network",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "For which network?"
+            },
+            {
+              "lang": "en",
+              "value": "Which network?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "39b1dcbe-5e85-45d3-97ff-37a54b48f07d",
+          "required": true,
+          "dataType": "@sys.duration",
+          "name": "time-duration",
+          "value": "$time-duration",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What time duration (ex. 24 hours or 3 days)?"
+            },
+            {
+              "lang": "en",
+              "value": "How long (ex. 12 hours or 55 minutes)?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1516362678,
+  "fallbackIntent": false,
+  "events": []
+}

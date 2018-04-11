@@ -1,0 +1,29 @@
+{
+  "id": "e3cde9f1-1c36-437a-b9e5-e5047035706d",
+  "name": "Help Me - List Commands",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "listMyFunctions",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1515692268,
+  "fallbackIntent": false,
+  "events": []
+}

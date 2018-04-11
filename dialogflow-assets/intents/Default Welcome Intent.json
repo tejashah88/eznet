@@ -1,0 +1,37 @@
+{
+  "id": "238e0a74-ada1-4688-9841-3703e1ad3a1e",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Hello, my name is EZNet. I can help monitor, manage and analyze your Meraki organizations and networks for you. If you need some help for how to use this bot, say or type \"help me\". Now what would you like to do?"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true,
+        "facebook": true,
+        "slack": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1509123648,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

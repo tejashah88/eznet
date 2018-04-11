@@ -1,0 +1,98 @@
+[
+  {
+    "id": "eecd6421-40fb-4c89-873b-8d96a69dd3ff",
+    "data": [
+      {
+        "text": "list admins in my org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 0
+  },
+  {
+    "id": "ebfb12de-b761-4eab-9297-cfa6e1b607ee",
+    "data": [
+      {
+        "text": "list admins of my org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5e50548d-23a1-46f1-a5ce-378500761cc5",
+    "data": [
+      {
+        "text": "find the admins of my organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "17dd2707-cfbf-42ea-b00b-358265ee90de",
+    "data": [
+      {
+        "text": "who are the administrators of my organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "61689772-bbbf-4c80-8e77-8c1103f0a38c",
+    "data": [
+      {
+        "text": "can you tell me the admins of my org?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0f8751cc-39c4-4008-96e7-82620217ce48",
+    "data": [
+      {
+        "text": "list the administrators in my organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7627a0b5-404e-4119-bd14-dc2433cf9c46",
+    "data": [
+      {
+        "text": "find the admins in my organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "93f7f24b-3351-4e70-88c7-3b1ca851c25b",
+    "data": [
+      {
+        "text": "can you list the administrators in my org?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

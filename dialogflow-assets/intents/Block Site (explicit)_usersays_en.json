@@ -1,0 +1,392 @@
+[
+  {
+    "id": "3e2984bb-85bc-4e55-b0ba-3f6522e99df1",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "berkeley.edu",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " in my ",
+        "userDefined": false
+      },
+      {
+        "text": "BestNetwork",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "1d6de9c9-4422-47ab-a9e7-634b73097ca7",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "https://dashboard.meraki.com/api_docs, slack.com, and",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " github.com in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Facebook",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "66a07a11-05d1-4a3f-919c-cf6c628952d4",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "https://dashboard.heroku.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " on the ",
+        "userDefined": false
+      },
+      {
+        "text": "Heroku",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "0d7d3cbe-eeeb-47e8-bde5-558c29759617",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "facebook.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "Read Write Sandbox",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "a91c16c9-82e2-43c2-8610-14ba41cefae1",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "unity.org",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "reddit.org",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "ca.gov",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": true
+      },
+      {
+        "text": " on my ",
+        "userDefined": false
+      },
+      {
+        "text": "Amazon Web Services",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "bed01802-7b93-46f6-bb75-2383bc06f92d",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "facebook.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "reddit.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": ", and ",
+        "userDefined": false
+      },
+      {
+        "text": "youtube.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "OctaBytes",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "cd68c03a-3a7f-489f-b676-57ce5d967011",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "change.org",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": true
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "Google",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "f22116f0-520d-41e6-9baf-888aa07d1d13",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "facebook.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "reddit.org",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": true
+      },
+      {
+        "text": " on the ",
+        "userDefined": false
+      },
+      {
+        "text": "Read Write",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "4bb85836-30bb-4dbe-a120-ae2f57ec51e6",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "cnn.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "dnn.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "facebook.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "gsdds.com",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": true
+      },
+      {
+        "text": " on the ",
+        "userDefined": false
+      },
+      {
+        "text": "Facebook",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "c5c1329e-9127-4089-8136-5f380cd3d232",
+    "data": [
+      {
+        "text": "block ",
+        "userDefined": false
+      },
+      {
+        "text": "reddit.org",
+        "alias": "urls",
+        "meta": "@sys.url",
+        "userDefined": false
+      },
+      {
+        "text": " on the ",
+        "userDefined": false
+      },
+      {
+        "text": "OctaBytes",
+        "alias": "network",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

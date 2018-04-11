@@ -1,0 +1,26 @@
+{
+  "name": "EZNet",
+  "description": "A chatbot interface for retrieving Meraki network data and analysis with natural language!",
+  "repository": "https://github.com/tejashah88/eznet",
+  "logo": "https://blog.algosec.com/wp-content/uploads/globe.jpg",
+  "keywords": [
+    "cisco", "spark", "facebook", "messenger", "slack",
+    "google", "assistant", "meraki", "dialogflow", "api.ai",
+    "bot", "chatbot", "nodejs", "meraki-dashboard"
+  ],
+  "env": {
+    "MERAKI_API_KEY": {
+      "description": "The API token from the Meraki Dashboard.",
+      "required": true
+    },
+    "CISCOSPARK_ACCESS_TOKEN": {
+      "description": "The bot's access token from Cisco Spark. Create a new bot account at https://developer.ciscospark.com/add-bot.html if you do not have one.",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

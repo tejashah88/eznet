@@ -56,9 +56,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# Webtask secret variables
-secrets.yml
-
-# Serverless directories
-.serverless

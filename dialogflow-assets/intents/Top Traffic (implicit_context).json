@@ -1,0 +1,56 @@
+{
+  "id": "5b6af8dd-b609-4f5c-a98d-0a9157795f3d",
+  "name": "Top Traffic (implicit/context)",
+  "auto": true,
+  "contexts": [
+    "network"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "topTraffic",
+      "affectedContexts": [
+        {
+          "name": "network",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "3d3791c8-9432-4199-838e-7840e762de23",
+          "required": true,
+          "dataType": "@sys.duration",
+          "name": "time-duration",
+          "value": "$time-duration",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What time duration (ex. 24 hours or 3 days)?"
+            },
+            {
+              "lang": "en",
+              "value": "How long (ex. 12 hours or 55 minutes)?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1509352823,
+  "fallbackIntent": false,
+  "events": []
+}

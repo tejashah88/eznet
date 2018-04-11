@@ -1,0 +1,288 @@
+[
+  {
+    "id": "33cfbaa3-b88f-41f2-87fc-180756084ef3",
+    "data": [
+      {
+        "text": "list the networks in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Reddit",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509352390
+  },
+  {
+    "id": "a2ee26a5-9182-473b-a9c1-aed5d5ba6ddf",
+    "data": [
+      {
+        "text": "What are the networks on ",
+        "userDefined": false
+      },
+      {
+        "text": "OctaBytes",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": false
+      },
+      {
+        "text": " organization?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 1509352390
+  },
+  {
+    "id": "bbacabc9-cbfc-4cd5-bc09-2f52e65de4ed",
+    "data": [
+      {
+        "text": "What are the networks on ",
+        "userDefined": false
+      },
+      {
+        "text": "Pyrocynical",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": false
+      },
+      {
+        "text": " organization?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509352390
+  },
+  {
+    "id": "dc2c93f1-745c-4963-867f-88c22b5b7d81",
+    "data": [
+      {
+        "text": "networks in the ",
+        "userDefined": false
+      },
+      {
+        "text": "OctaBytes",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": false
+      },
+      {
+        "text": " orgs",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 1509352390
+  },
+  {
+    "id": "ed0f35d9-ffaf-41eb-bba4-c387a358855b",
+    "data": [
+      {
+        "text": "list of networks in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Pyrocynical",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": false
+      },
+      {
+        "text": " org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1509352390
+  },
+  {
+    "id": "5a519bc8-9297-40fd-8830-325a6b30dcd9",
+    "data": [
+      {
+        "text": "list of networks in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Facebook",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 11,
+    "updated": 1509352390
+  },
+  {
+    "id": "9b3238ea-b126-466b-beaf-a113126872cf",
+    "data": [
+      {
+        "text": "list of networks in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Facebook",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": false
+      },
+      {
+        "text": " organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1509352390
+  },
+  {
+    "id": "6d6ac123-4113-4967-9575-01589fad3b2c",
+    "data": [
+      {
+        "text": "list the networks in ",
+        "userDefined": false
+      },
+      {
+        "text": "OctaBytes",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509352390
+  },
+  {
+    "id": "543acc2f-618c-4bec-8033-0031005137d8",
+    "data": [
+      {
+        "text": "list of networks in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Read Write Sandbox",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509352390
+  },
+  {
+    "id": "7bc0759f-91dc-48d8-917a-e5353dfadd54",
+    "data": [
+      {
+        "text": "networks in the ",
+        "userDefined": false
+      },
+      {
+        "text": "Meraki Live Sandbox",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509352390
+  },
+  {
+    "id": "07b2bd3f-7a97-4276-8372-d7eabf31e11d",
+    "data": [
+      {
+        "text": "what are the networks on the ",
+        "userDefined": false
+      },
+      {
+        "text": "OctaBytes",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " organization?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509352390
+  },
+  {
+    "id": "33cee03f-5bcc-4388-bb4a-aec5a73f4903",
+    "data": [
+      {
+        "text": "what are the networks for the ",
+        "userDefined": false
+      },
+      {
+        "text": "Read Write Sandbox",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " organization?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509352390
+  },
+  {
+    "id": "9164fda0-44db-4a02-8597-56c2176a9718",
+    "data": [
+      {
+        "text": "what networks are in the ",
+        "userDefined": false
+      },
+      {
+        "text": "OctaBytes",
+        "alias": "org",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " organization?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509352390
+  }
+]

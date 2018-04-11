@@ -1,0 +1,48 @@
+{
+  "id": "2f452aff-202c-4f59-8a54-befff8d788a3",
+  "name": "Help Me - Explain Command",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "explainFunction",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0512335d-3e1c-47b1-aba7-01aadf5e3ae3",
+          "required": true,
+          "dataType": "@CommandType",
+          "name": "command",
+          "value": "$command",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What command did you want to know about?"
+            },
+            {
+              "lang": "en",
+              "value": "What command did you need help?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1515692298,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "a3feadb0-cba9-4a2d-9b5e-14fc7540c229",
+  "name": "Networks List (implicit/no-context)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "listNetworks",
+      "affectedContexts": [
+        {
+          "name": "organization",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "24bdabd0-b94c-49a4-b7cb-4394aab0ae07",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "org",
+          "value": "$org",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which organization?"
+            },
+            {
+              "lang": "en",
+              "value": "For which organization?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1509352437,
+  "fallbackIntent": false,
+  "events": []
+}

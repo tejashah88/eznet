@@ -1,0 +1,71 @@
+[
+  {
+    "id": "a28b889f-23e1-434e-965f-9c3c5c1b4366",
+    "data": [
+      {
+        "text": "need some help here",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "6832211a-9b41-4146-b3bf-96a46e3aedb0",
+    "data": [
+      {
+        "text": "please help me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "0da4157d-fc6c-4e18-a4ad-e628a65799ca",
+    "data": [
+      {
+        "text": "I need some help for using this bot",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511684245
+  },
+  {
+    "id": "a9090aed-0ca7-4883-8be5-79ec760f404e",
+    "data": [
+      {
+        "text": "help me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511684245
+  },
+  {
+    "id": "95cb0f2e-bc1b-4a3d-aea0-2fa870a1fe2d",
+    "data": [
+      {
+        "text": "I need some help",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511684245
+  },
+  {
+    "id": "1a9b47aa-e0f7-484a-8ef3-4d9f7605e443",
+    "data": [
+      {
+        "text": "can you help me?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

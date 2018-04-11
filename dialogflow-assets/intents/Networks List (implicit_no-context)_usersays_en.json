@@ -1,0 +1,206 @@
+[
+  {
+    "id": "ab8cd37a-0a11-4cda-ac38-4f652d02ecad",
+    "data": [
+      {
+        "text": "list the networks in my org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1509143404
+  },
+  {
+    "id": "ea08135d-9f79-48bb-97de-63b26bd27587",
+    "data": [
+      {
+        "text": "list the networks",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "3bd8e3ce-572a-4a1d-881d-e4180b071377",
+    "data": [
+      {
+        "text": "list of networks",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1509143404
+  },
+  {
+    "id": "dfcced7d-6a8e-459a-a3e0-27e0c69555d3",
+    "data": [
+      {
+        "text": "list of networks in my org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 1509143404
+  },
+  {
+    "id": "bbe0ede1-1905-4bb4-8478-ecaf6fa0a1e9",
+    "data": [
+      {
+        "text": "what networks are in my organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "88c45dce-556e-427a-831f-06ade10d1d7a",
+    "data": [
+      {
+        "text": "what are the networks for my org?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "be87d6a8-ad39-4182-b479-121706c77056",
+    "data": [
+      {
+        "text": "list of networks in my organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "c9c0b6e5-f42f-4de3-a39a-df0c7d960d91",
+    "data": [
+      {
+        "text": "list the networks in my organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 1509143404
+  },
+  {
+    "id": "0850c879-acb7-48ee-82d4-6e7d7fa0788b",
+    "data": [
+      {
+        "text": "what are the networks for ",
+        "userDefined": false
+      },
+      {
+        "text": "my",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " org?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "43b33cdd-940b-4026-adba-97c4d9866fe0",
+    "data": [
+      {
+        "text": "list of networks in ",
+        "userDefined": false
+      },
+      {
+        "text": "my",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " org",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "65257c79-b551-47b2-bf0a-bd935fd5b384",
+    "data": [
+      {
+        "text": "networks in ",
+        "userDefined": false
+      },
+      {
+        "text": "my",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " organization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "c877e500-fc76-4c7f-a7a2-c970a7f8502d",
+    "data": [
+      {
+        "text": "what networks are in ",
+        "userDefined": false
+      },
+      {
+        "text": "my",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " organization?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "270d4de6-fdfc-416f-9f02-0bbc2dedaa40",
+    "data": [
+      {
+        "text": "what are the networks for my organization?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  },
+  {
+    "id": "953741db-9aa9-44c7-9f18-5741bbdb6d8d",
+    "data": [
+      {
+        "text": "what are the networks on my organization?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1509143404
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "id": "6903161a-06f5-4664-ba18-d6b50802fd3d",
+  "name": "Devices List (explicit)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "listDevices",
+      "affectedContexts": [
+        {
+          "name": "network",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "0260d90d-4983-4d10-b6fd-1e6ac794eef3",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "network",
+          "value": "$network",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which network?"
+            },
+            {
+              "lang": "en",
+              "value": "For which network?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1523412167,
+  "fallbackIntent": false,
+  "events": []
+}

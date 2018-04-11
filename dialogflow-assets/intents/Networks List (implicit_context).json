@@ -1,0 +1,37 @@
+{
+  "id": "1a0750c2-e59a-46b9-8b43-0d0cf20ced2f",
+  "name": "Networks List (implicit/context)",
+  "auto": true,
+  "contexts": [
+    "organization"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "listNetworks",
+      "affectedContexts": [
+        {
+          "name": "organization",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1509142093,
+  "fallbackIntent": false,
+  "events": []
+}

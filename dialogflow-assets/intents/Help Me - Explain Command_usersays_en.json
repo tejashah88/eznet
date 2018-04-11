@@ -1,0 +1,86 @@
+[
+  {
+    "id": "41f0cb3f-0f1d-400a-b9e3-96977d838d87",
+    "data": [
+      {
+        "text": "what does the ",
+        "userDefined": false
+      },
+      {
+        "text": "top websites usage",
+        "alias": "command",
+        "meta": "@CommandType",
+        "userDefined": false
+      },
+      {
+        "text": " do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "d79f6a85-f8dc-41d3-9f4f-e50eee796d36",
+    "data": [
+      {
+        "text": "what does the ",
+        "userDefined": false
+      },
+      {
+        "text": "top app usage",
+        "alias": "command",
+        "meta": "@CommandType",
+        "userDefined": false
+      },
+      {
+        "text": " command do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "4599c644-cc9a-4a89-87c6-239f95c6c881",
+    "data": [
+      {
+        "text": "how does the ",
+        "userDefined": false
+      },
+      {
+        "text": "data usage",
+        "alias": "command",
+        "meta": "@CommandType",
+        "userDefined": false
+      },
+      {
+        "text": " command work",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "dae929ab-eef8-47e5-bcf0-ead0e0895530",
+    "data": [
+      {
+        "text": "what does ",
+        "userDefined": false
+      },
+      {
+        "text": "list my orgs",
+        "alias": "command",
+        "meta": "@CommandType",
+        "userDefined": false
+      },
+      {
+        "text": " do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

@@ -1,29 +1,36 @@
 {
   "name": "eznet",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A cross-platform chatbot interface for retrieving Meraki network data and analysis with natural language!",
   "main": "index.js",
+  "keywords": [
+    "cisco", "spark", "facebook", "messenger", "slack",
+    "google", "assistant", "meraki", "dialogflow", "api.ai",
+    "bot", "chatbot", "nodejs", "meraki-dashboard"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">8.0.0"
   },
   "author": "Tejas Shah",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "bottleneck": "^2.3.0",
     "bytes": "^3.0.0",
-    "ciscospark": "^1.23.5",
-    "dns-then": "^0.1.0",
-    "express": "^4.16.2",
-    "express-async-await": "^1.1.0",
-    "firebase": "^4.9.0",
+    "ciscospark": "^1.30.1",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-async-errors": "^2.1.2",
     "fuse.js": "^3.2.0",
-    "interval-promise": "^1.1.0",
+    "mem": "^3.0.0",
     "node-meraki-dashboard": "1.0.0",
     "p-throttle": "^1.1.0",
     "quiche": "^0.3.0",
     "randomcolor": "^0.5.3",
-    "round-to": "^2.0.0",
-    "seconds-converter": "^1.2.0"
+    "traverse": "^0.6.6"
   }
 }

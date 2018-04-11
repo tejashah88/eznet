@@ -1,0 +1,31 @@
+{
+  "id": "00489336-0bbe-4033-8f71-ffbba55e43b6",
+  "name": "Organizations List",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "listOrganizations",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1509441533,
+  "fallbackIntent": false,
+  "events": []
+}
