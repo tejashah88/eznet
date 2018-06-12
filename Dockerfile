@@ -1,12 +1,12 @@
-FROM node:8.11.1
+FROM node:carbon
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
-
-COPY . /app
+COPY package.json ./
+RUN npm install --production
+COPY . .
 
 EXPOSE 8080
+VOLUME /app
 
 CMD [ "npm", "start" ]

@@ -1,0 +1,19 @@
+version: "3"
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./:/app"
+    env_file: ".env"
+    networks:
+      - "bot-network"
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379"
+    networks:
+      - "bot-network"
+networks:
+  bot-network:

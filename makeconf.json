@@ -1,67 +1,40 @@
 {
-  "name": "EZNet",
-  "description": "A chatbot interface for retrieving Meraki network data and analysis with natural language!",
-  "repository": "https://github.com/tejashah88/eznet",
-  "logo": "https://blog.algosec.com/wp-content/uploads/globe.jpg",
-  "keywords": [
-    "cisco",
-    "spark",
-    "webex",
-    "facebook",
-    "messenger",
-    "slack",
-    "google",
-    "assistant",
-    "meraki",
-    "dialogflow",
-    "api.ai",
-    "chatbot",
-    "voicebot",
-    "nodejs",
-    "meraki-dashboard"
-  ],
-  "env": {
+  "format": ".env",
+  "file": ".env",
+  "config": {
     "MERAKI_API_KEY": {
       "description": "The API token from the Meraki Dashboard.",
       "required": true
     },
     "CACHE_CRON_JOB_STRING": {
       "description": "The cron string for controlling often should the cache be refreshed.",
-      "value": "*/15 * * * *",
+      "default": "*/15 * * * *",
       "required": true
     },
     "CANCEL_DETECTION_TYPE": {
       "description": "The cancel detection type for handling cancelling slot-filling when being prompted to enter an org/network. Cna be FUZZY or NEURAL_NET.",
-      "value": "NEURAL_NET",
+      "default": "NEURAL_NET",
       "required": true
     },
     "GOOGLE_SUPPORT": {
       "description": "Enable Actions on Google platform integration support.",
-      "value": "true",
+      "default": true,
       "required": true
     },
     "FACEBOOK_SUPPORT": {
       "description": "Enable Facebook platform integration support.",
-      "value": "true",
+      "default": true,
       "required": true
     },
     "SLACK_SUPPORT": {
       "description": "Enable Slack platform integration support.",
-      "value": "true",
+      "default": true,
       "required": true
     },
     "SPARK_SUPPORT": {
       "description": "Enable Spark platform integration support.",
-      "value": "true",
+      "default": true,
       "required": true
     }
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    }
-  ],
-  "addons": [
-    "heroku-redis:hobby-dev"
-  ]
+  }
 }

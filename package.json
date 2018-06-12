@@ -1,36 +1,69 @@
 {
   "name": "eznet",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A cross-platform chatbot interface for retrieving Meraki network data and analysis with natural language!",
-  "main": "index.js",
+  "main": "src/index.js",
   "keywords": [
-    "cisco", "spark", "facebook", "messenger", "slack",
-    "google", "assistant", "meraki", "dialogflow", "api.ai",
-    "bot", "chatbot", "nodejs", "meraki-dashboard"
+    "cisco",
+    "spark",
+    "webex",
+    "facebook",
+    "messenger",
+    "slack",
+    "google",
+    "assistant",
+    "meraki",
+    "dialogflow",
+    "api.ai",
+    "chatbot",
+    "voicebot",
+    "nodejs",
+    "meraki-dashboard"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
+    "env": "makeconf",
+    "start": "node src/index",
+    "ngrok": "ngrok http 8080",
+    "redis": "redis-server",
+    "docker": "docker-compose up",
+    "docker-clean": "docker-compose down",
+    "heroku": "PORT=$PORT npm start"
   },
   "engines": {
-    "node": ">8.0.0"
+    "node": ">=8.0.0"
   },
-  "author": "Tejas Shah",
+  "author": "Tejas Shah, Dhanush Patel, Jesse Gao",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "bottleneck": "^2.3.0",
+    "actions-on-google": "^2.1.3",
+    "adm-zip": "^0.4.11",
+    "body-parser": "^1.18.3",
     "bytes": "^3.0.0",
-    "ciscospark": "^1.30.1",
-    "dotenv": "^5.0.1",
+    "dialogflow-fulfillment": "^0.4.1",
+    "diehard": "^1.5.2",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "express-async-errors": "^2.1.2",
-    "fuse.js": "^3.2.0",
-    "mem": "^3.0.0",
-    "node-meraki-dashboard": "1.0.0",
-    "p-throttle": "^1.1.0",
+    "express-async-errors": "^3.0.0",
+    "fuse.js": "^3.2.1",
+    "humanize-duration": "^3.14.0",
+    "ioredis": "^3.2.2",
+    "is-docker": "^1.1.0",
+    "is-heroku": "^2.0.0",
+    "make-promises-safe": "^1.1.0",
+    "natural-brain": "^0.3.2",
+    "node-meraki-dashboard": "^1.2.0",
+    "node-schedule": "^1.3.0",
+    "outdent": "^0.5.0",
+    "p-retry": "^2.0.0",
     "quiche": "^0.3.0",
     "randomcolor": "^0.5.3",
-    "traverse": "^0.6.6"
+    "winston": "^3.0.0-rc5"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "makeconf": "^1.4.4"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "script"
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "require-await": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "semi": ["error", "always"]
+  }
+}

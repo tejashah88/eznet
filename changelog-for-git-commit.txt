@@ -1,0 +1,18 @@
+A long time later, in a galaxy not too far away...a chatbot has been reborn from the ashes.
+
+Features:
+  Server/Tooling:
+    - All meraki data will be cached on Redis for real-time data fetching.
+      - includes a cron job that updates said cache every 15 minutes (configurable as an env variable).
+    - Better support for docker and heroku.
+    - Better organization and modularity (for the most part).
+    - Added a bunch of basic commands to automate deploying and running the server. See `package.json` for more details.
+    - Linting provided by ESLint.
+    - Logging provided by winston.
+  Chatbot:
+    - No more inconsistency between Cisco Webex (formally Cisco Spark) and other platforms.
+    - A better slot-filling system to enable deterministic and fuzzy validation of parameters before fully processing requests.
+      - i.e, it can verify that networks and orgs exist as well as validate other parameters before fully processing requests.
+    - Better fuzzy matching against existing networks and orgs.
+    - An experimental NLP section (under the src/nlp folder) is used for handling cases where trying to cancel from slot filling where the requested parameter is of type `@sys.any` simply absorbs the request.
+      - features cancel detection via fuzzy searching or neural network powered classification (can be confured in env variables)

@@ -2,4 +2,6 @@ node_modules
 npm-debug.log
 .git
 .gitignore
-.env
+*.rdb
+*.log
+logs
