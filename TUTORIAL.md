@@ -4,7 +4,7 @@ This tutorial will cover how to deploy your own version of EZNet.
 ## Creating the dialogflow agent
 You can either click the button below, which will automatically create an agent for you or create it yourself and import the `dialogflow-assets.zip` file.
 
-[![EZNet](https://dialogflow.com/images/deploy.png)](https://console.dialogflow.com/api-client/oneclick?templateUrl=https://github.com/tejashah88/eznet/raw/master/assets/dialogflow-assets.zip&agentName=EZNet)
+[![EZNet](https://dialogflow.com/images/deploy.png)](https://console.dialogflow.com/api-client/#/oneclick?templateUrl=https://github.com/tejashah88/eznet/raw/master/assets/dialogflow-assets.zip&agentName=EZNet)
 
 ## Creating the various integrations
 * [Google Assistant](https://dialogflow.com/docs/integrations/google-assistant)
