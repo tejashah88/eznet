@@ -1,4 +1,6 @@
 # eznet
+[![Devpost | EZNet](https://badges.devpost-shields.com/get-badge?name=EZNet&id=ezsec&type=big-logo&style=flat)](https://devpost.com/software/ezsec)
+
 A cross-platform chatbot for retrieving Meraki network data and analysis with natural language!
 
 ##### This was originally built at CalHacks 4.0 under the name "ezsec":
