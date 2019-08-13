@@ -52,7 +52,7 @@ async function populateData() {
 
     for (const net of nets) {
       const devices = await utils.retryablePromise({
-        networkFunc: dashboard.devices.list,
+        networkFunc: dashboard.devices.listByNetwork,
         errorHandler: throwOnError429
       }, net.id);
       logger.info("    Got some devices from a network!");
