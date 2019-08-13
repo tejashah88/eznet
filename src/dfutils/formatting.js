@@ -41,15 +41,19 @@ function displayableTimeDuration(timeDur) {
   if (!timeDur.amount || !timeDur.unit || !ALLOWED_INPUT_TIME_UNITS.includes(timeDur.unit))
     throw new BotLogicError("Invalid time duration input given. The time duration must be a positive amount with a valid unit.");
 
-  let finalPluralNoun = timeDur.amount === 1 ? TIME_UNIT_SINGULAR_NOUN[timeDur.unit] : TIME_UNIT_PLURAL_NOUN[timeDur.unit];
+  const finalPluralNoun = timeDur.amount === 1 ? TIME_UNIT_SINGULAR_NOUN[timeDur.unit] : TIME_UNIT_PLURAL_NOUN[timeDur.unit];
   return timeDur.amount + " " + finalPluralNoun;
 }
 
 function truncateList(params) {
-  let {
-    text, speech, endText, endSpeech,
-    fallback, throwError = true, resetCtxField,
-    list, limit = DISPLAY_LIMIT, pluralNoun,
+  let { text, speech } = params;
+
+  const {
+    endText, endSpeech,
+    fallback, throwError = true,
+    resetCtxField, list,
+    limit = DISPLAY_LIMIT,
+    pluralNoun
   } = params;
 
   if (!list.length) {
@@ -74,9 +78,11 @@ function truncateList(params) {
 }
 
 function truncateDoubleList(params) {
-  let {
-    text, speech, endText, endSpeech,
-    fallback, throwError = true, resetCtxField,
+  let { text, speech } = params;
+
+  const {
+    endText, endSpeech, fallback,
+    throwError = true, resetCtxField,
     textList, speechList,
     limit = DISPLAY_LIMIT, pluralNoun
   } = params;
@@ -107,32 +113,32 @@ function truncateDoubleList(params) {
 }
 
 function markdownExpander(text) {
-  let finalText = outdent(text);
+  const finalText = outdent(text);
 
-  let boldFormatMap = {
+  const boldFormatMap = {
     google: "**",
     facebook: "*",
     slack: "*",
     spark: "**"
   };
 
-  let bulletFormatMap = {
+  const bulletFormatMap = {
     google: "*",
     facebook: "•",
     slack: "•",
     spark: "•"
   };
 
-  let lineEndingModifications = {
+  const lineEndingModifications = {
     google: "  \n",
     facebook: "\n",
     slack: "\n",
     spark: "  \n"
   };
 
-  let finalMsgs = {};
+  const finalMsgs = {};
 
-  for (let source of POSSIBLE_SOURCES) {
+  for (const source of POSSIBLE_SOURCES) {
     finalMsgs[source] = finalText
       .replace(/<bold>/g, boldFormatMap[source])
       .replace(/<o>/g, bulletFormatMap[source])

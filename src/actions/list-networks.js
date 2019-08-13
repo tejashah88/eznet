@@ -10,7 +10,7 @@ const dfformat = require("../dfutils/formatting");
 const BotLogicError = require("../errors/BotLogicError");
 
 module.exports = async function listNetworks({ actionIncomplete, parameters, contexts }) {
-  let inputs = dfutils.getInputs({ parameters, contexts, fields: ["org"] });
+  const inputs = dfutils.getInputs({ parameters, contexts, fields: ["org"] });
 
   // validation phase
   if (actionIncomplete) {
@@ -28,17 +28,17 @@ module.exports = async function listNetworks({ actionIncomplete, parameters, con
     logger.error("Error: no handler to process remaining parameters during slot-filling process!");
     throw new BotLogicError("An error occurred while trying to process your request. Please try again later.");
   } else {
-    let org = await dfutils.obtainOrg({
+    const org = await dfutils.obtainOrg({
       inputOrg: inputs.org,
       fnName: "listnetworks",
       invalidParam: "org"
     });
 
     // processing phase
-    let networks = await cache.networks.getByOrgId(org.id);
-    let networkNames = networks.map(network => network.name);
+    const networks = await cache.networks.getByOrgId(org.id);
+    const networkNames = networks.map(network => network.name);
 
-    let { text, speech } = dfformat.truncateList({
+    const { text, speech } = dfformat.truncateList({
       text: `Your organization, <bold>${org.name}<bold>, has the following networks:\n`,
       speech: `Your organization, ${org.name}, has the following networks: `,
       fallback: `There are no networks in the "${org.name}" organization!`,

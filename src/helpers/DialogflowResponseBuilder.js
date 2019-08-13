@@ -21,7 +21,7 @@ module.exports = class DialogflowResponseBuilder {
     if (!payload)
       throw new Error("Cannot quick configure without a valid payload");
 
-    let { text, speech, imageUrl, altText, contextOut, resetContextFields, followupEvent } = payload;
+    const { text, speech, imageUrl, altText, contextOut, resetContextFields, followupEvent } = payload;
     if (typeof text !== "string" || typeof speech !== "string")
       throw new Error("Must specify both 'text' and 'speech'.");
 
@@ -90,8 +90,8 @@ module.exports = class DialogflowResponseBuilder {
     if (typeof text !== "string" || typeof speech !== "string")
       throw new Error("Must specify both 'text' and 'speech' for responding with text and speech.");
 
-    let finalTexts = dfformat.markdownExpander(text);
-    let fulfillMsg = utils.cleanJSON({
+    const finalTexts = dfformat.markdownExpander(text);
+    const fulfillMsg = utils.cleanJSON({
       payload: {
         facebook: { text: finalTexts.facebook },
         slack: { text: finalTexts.slack },
@@ -107,7 +107,7 @@ module.exports = class DialogflowResponseBuilder {
     if (!imageUrl)
       throw new Error("Must specify the image URL for responding with an image.");
 
-    let fulfillMsg = utils.cleanJSON({
+    const fulfillMsg = utils.cleanJSON({
       payload: {
         facebook: {
           attachment: {
@@ -131,7 +131,7 @@ module.exports = class DialogflowResponseBuilder {
       this.response.outputContexts = [];
 
     if (typeof contextObj.organization !== "undefined") {
-      let orgContext = dfutils.createContextObject({
+      const orgContext = dfutils.createContextObject({
         sessionId: this.sessionId,
         contextId: "organization",
         lifespan,
@@ -142,7 +142,7 @@ module.exports = class DialogflowResponseBuilder {
     }
 
     if (typeof contextObj.network !== "undefined") {
-      let netContext = dfutils.createContextObject({
+      const netContext = dfutils.createContextObject({
         sessionId: this.sessionId,
         contextId: "network",
         lifespan,
@@ -156,7 +156,7 @@ module.exports = class DialogflowResponseBuilder {
   }
 
   clearOutgoingContexts(ctxFields) {
-    for (let contextField of ctxFields)
+    for (const contextField of ctxFields)
       this.addOutgoingContext({ [contextField]: "" }, 0);
     return this;
   }

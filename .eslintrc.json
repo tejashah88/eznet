@@ -9,6 +9,11 @@
   },
   "extends": "eslint:recommended",
   "rules": {
+    "prefer-const": ["warn", { "destructuring": "any", "ignoreReadBeforeAssign": false }],
+    "no-console": "error",
+    "no-unused-vars": "warn",
+    "no-var": "error",
+    "no-useless-escape": "off",
     "require-await": "error",
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],

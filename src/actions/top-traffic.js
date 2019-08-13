@@ -17,7 +17,7 @@ const humanizeDuration = require("humanize-duration").humanizer(HUMANIZE_CONFIG)
 const dashboard = require("node-meraki-dashboard")(process.env.MERAKI_API_KEY);
 
 module.exports = async function topTraffic({ actionIncomplete, parameters, contexts }) {
-  let inputs = dfutils.getInputs({ parameters, contexts, fields: ["network", "time-duration"] });
+  const inputs = dfutils.getInputs({ parameters, contexts, fields: ["network", "time-duration"] });
 
   // validation phase
   if (actionIncomplete) {
@@ -31,7 +31,7 @@ module.exports = async function topTraffic({ actionIncomplete, parameters, conte
     logger.error("Error: no handler to process remaining parameters during slot-filling process!");
     throw new BotLogicError("An error occurred while trying to process your request. Please try again later.");
   } else {
-    let net = await dfutils.obtainNetwork({
+    const net = await dfutils.obtainNetwork({
       inputNet: inputs.network,
       fnName: "datausage",
       invalidParam: "network",
@@ -49,8 +49,8 @@ module.exports = async function topTraffic({ actionIncomplete, parameters, conte
     }
 
     // processing stage
-    let totalSeconds = dfutils.calcTotalSeconds(inputs["time-duration"]);
-    let trafficData = await retryablePromise({
+    const totalSeconds = dfutils.calcTotalSeconds(inputs["time-duration"]);
+    const trafficData = await retryablePromise({
       networkFunc: dashboard.networks.getTrafficData,
       errorHandler: err => ({ error: err.data.errors.join(" ") })
     }, net.id, { timespan: totalSeconds });
@@ -58,7 +58,7 @@ module.exports = async function topTraffic({ actionIncomplete, parameters, conte
     if (trafficData.error)
       throw new BotLogicError(trafficData.error).setResetContextFields("network");
 
-    let timeDurText = dfformat.displayableTimeDuration(inputs["time-duration"]);
+    const timeDurText = dfformat.displayableTimeDuration(inputs["time-duration"]);
 
     if (!trafficData || !trafficData.length) {
       throw new BotLogicError(
@@ -80,29 +80,29 @@ module.exports = async function topTraffic({ actionIncomplete, parameters, conte
     topTraffic = topTraffic.slice(0, 10);
 
     text += topTraffic.map((tt, index) => {
-      let totalTime = humanizeDuration(tt.time);
-      let dataSource = tt.app + (tt.source ? ` - ${tt.source}` : "");
+      const totalTime = humanizeDuration(tt.time);
+      const dataSource = tt.app + (tt.source ? ` - ${tt.source}` : "");
       return `${index + 1}. ${dataSource}: ${totalTime}`;
     }).join("\n");
 
     speech += topTraffic.map(tt => {
-      let totalTime = humanizeDuration(tt.time);
-      let dataSource = tt.app + (tt.source ? ` from ${tt.source}` : "");
+      const totalTime = humanizeDuration(tt.time);
+      const dataSource = tt.app + (tt.source ? ` from ${tt.source}` : "");
       return `${dataSource} used for ${totalTime}`;
     }).join(", ");
 
-    let pie = new quiche("pie");
+    const pie = new quiche("pie");
     pie.setHostname("image-charts.com");
     pie.setWidth(700);
     pie.setHeight(700);
 
-    for (let tt of topTraffic) {
-      let dataSource = tt.app + (tt.source ? ` @ ${tt.source}` : "");
+    for (const tt of topTraffic) {
+      const dataSource = tt.app + (tt.source ? ` @ ${tt.source}` : "");
       pie.addData(tt.time, dataSource, randomColor().slice(1));
     }
 
     // handling edge case where having only one data point breaks chart
-    let imageUrl = pie.getUrl(true).replace(/(chd=t%3A(\d+(\.\d+)?))&/g,"$1%2C0&");
+    const imageUrl = pie.getUrl(true).replace(/(chd=t%3A(\d+(\.\d+)?))&/g,"$1%2C0&");
 
     // response phase
     return {

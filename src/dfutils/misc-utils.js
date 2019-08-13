@@ -11,17 +11,17 @@ const cache = require("../cache/cache-db");
 const dfformat = require("./formatting");
 
 function isValidTimeDuration({ parameters, contexts }) {
-  let timeDur = parameters["time-duration"] || contexts["time-duration"] || null;
+  const timeDur = parameters["time-duration"] || contexts["time-duration"] || null;
   if (!timeDur || !timeDur.amount || !timeDur.unit || !ALLOWED_INPUT_TIME_UNITS.includes(timeDur.unit))
     return false;
-  let totalSeconds = calcTotalSeconds(timeDur);
+  const totalSeconds = calcTotalSeconds(timeDur);
   return (totalSeconds >= (2 * TIME_UNIT_IN_SECONDS["h"]) && totalSeconds <= TIME_UNIT_IN_SECONDS["mo"]);
 }
 
 const calcTotalSeconds = timeDur => timeDur.amount * TIME_UNIT_IN_SECONDS[timeDur.unit];
 
 function respondToInvalidTimeDuration(processingInvalidInput, mainEntityDescriptor) {
-  let msg = processingInvalidInput ?
+  const msg = processingInvalidInput ?
     `Sorry, but you can only get ${mainEntityDescriptor} between 2 hours and 1 month. What time duration?` :
     "What time duration? You can choose between a range of 2 hours and 1 month.";
   return { text: msg, speech: msg };
@@ -33,8 +33,8 @@ const containsExistingOrg = async ({ inputOrg, contexts }) =>
 
 // used when prompting for an org while displaying a list of possible ones
 async function handleMissingOrg({ contexts, fnName }) {
-  let repromptOrg = contexts[fnName + "-invalid-org"];
-  let possibleOrgs = contexts[fnName + "-possible-orgs"];
+  const repromptOrg = contexts[fnName + "-invalid-org"];
+  const possibleOrgs = contexts[fnName + "-possible-orgs"];
   if (repromptOrg) {
     return dfformat.truncateList({
       text: "Sorry, but there are multiple similarly named organizations:\n",
@@ -47,8 +47,8 @@ async function handleMissingOrg({ contexts, fnName }) {
       pluralNoun: "organizations"
     });
   } else {
-    let orgsList = await cache.orgs.getAll();
-    let orgNames = orgsList.map(org => org.name);
+    const orgsList = await cache.orgs.getAll();
+    const orgNames = orgsList.map(org => org.name);
 
     return dfformat.truncateList({
       text: "Which organization? You can choose from the following orgs:\n",
@@ -68,8 +68,8 @@ const containsExistingNetwork = async ({ inputNet, contexts }) =>
 
 // used when prompting for a network while displaying a list of possible ones
 async function handleMissingNetwork({ contexts }) {
-  let repromptNetwork = contexts["invalid-network"];
-  let possibleNetworks = contexts["possible-networks"];
+  const repromptNetwork = contexts["invalid-network"];
+  const possibleNetworks = contexts["possible-networks"];
   if (repromptNetwork) {
     return dfformat.truncateList({
       text: "Sorry, but there are multiple similarly named networks:\n",
@@ -82,8 +82,8 @@ async function handleMissingNetwork({ contexts }) {
       pluralNoun: "networks"
     });
   } else {
-    let totalNetworks = await cache.networks.getAll();
-    let netNames = totalNetworks.map(net => net.name);
+    const totalNetworks = await cache.networks.getAll();
+    const netNames = totalNetworks.map(net => net.name);
 
     return dfformat.truncateList({
       text: "Which network? You can choose from the following networks:\n",
@@ -104,8 +104,8 @@ const containsExistingTimeDuration = ({ parameters, contexts }) => parameters["t
 // This is used for eliminating the unnecessary contexts and zeroing on the valid ones
 // Mainly, it's a mess to deal with them directly
 function contextTransformer(ctxs) {
-  let finalCtxs = {};
-  for (let ctx of ctxs) {
+  const finalCtxs = {};
+  for (const ctx of ctxs) {
     if (ctx.name.endsWith("organization") && ctx.parameters.org)
       finalCtxs.org = ctx.parameters.org;
     else if (ctx.name.endsWith("network") && ctx.parameters.network)
@@ -131,7 +131,7 @@ async function obtainOrg({ inputOrg = null, fnName, invalidParam, extraParams  =
     return await cache.orgs.getFuzzy(inputOrg);
   } catch (error) {
     if (FUZZY_FAIL_REASONS.TOO_MUCH === error.reason) {
-      let followupEvent = repromptFollowupEvent(fnName, invalidParam, extraParams, error.candidates);
+      const followupEvent = repromptFollowupEvent(fnName, invalidParam, extraParams, error.candidates);
       error.setFollowupEvent(followupEvent);
     }
 
@@ -144,7 +144,7 @@ async function obtainNetwork({ inputNet, fnName, invalidParam, extraParams  = {}
     return await cache.networks.getFuzzy(inputNet);
   } catch (error) {
     if (FUZZY_FAIL_REASONS.TOO_MUCH === error.reason) {
-      let followupEvent = repromptFollowupEvent(fnName, invalidParam, extraParams, error.candidates);
+      const followupEvent = repromptFollowupEvent(fnName, invalidParam, extraParams, error.candidates);
       error.setFollowupEvent(followupEvent);
     }
 

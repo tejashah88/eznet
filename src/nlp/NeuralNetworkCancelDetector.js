@@ -13,7 +13,7 @@ const BrainJSClassifier = require("natural-brain");
 
 function loadClassifier(file) {
   if (fs.existsSync(file)) {
-    let data = JSON.parse(fs.readFileSync(file));
+    const data = JSON.parse(fs.readFileSync(file));
     return BrainJSClassifier.restore(data);
   } else
     throw new Error(`Could not load NN classifier from file ${file}`);
@@ -33,7 +33,7 @@ module.exports = class NeuralNetworkCancelDetector {
         callbackPeriod: 1
       });
 
-      let [positiveTrainingSet, negativeTrainingSet] = trainingSet;
+      const [positiveTrainingSet, negativeTrainingSet] = trainingSet;
 
       // train classifier
       positiveTrainingSet.forEach(ex => this.classifier.addDocument(ex, true));
@@ -54,7 +54,7 @@ module.exports = class NeuralNetworkCancelDetector {
   }
 
   wants2Cancel(input) {
-    let prediction = this.classifier.classify(input);
+    const prediction = this.classifier.classify(input);
     return parseBool(prediction);
   }
 };

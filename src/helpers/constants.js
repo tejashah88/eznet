@@ -17,7 +17,7 @@ const FUZZY_FAIL_REASONS = { NOT_ENOUGH: 1, TOO_MUCH: 2 };
 const POSSIBLE_SOURCES = [ "google", "facebook", "slack", "spark" ];
 const POSSIBLE_SOURCES_OFFICIAL = [ "ACTIONS_ON_GOOGLE", "FACEBOOK", "SLACK", "spark"];
 
-let SUPPORTED_SOURCES = {
+const SUPPORTED_SOURCES = {
   google: process.env.GOOGLE_SUPPORT === "true",
   facebook: process.env.FACEBOOK_SUPPORT === "true",
   slack: process.env.SLACK_SUPPORT === "true",

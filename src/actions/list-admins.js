@@ -10,7 +10,7 @@ const dfformat = require("../dfutils/formatting");
 const BotLogicError = require("../errors/BotLogicError");
 
 module.exports = async function listAdmins({ actionIncomplete, parameters, contexts }) {
-  let inputs = dfutils.getInputs({ parameters, contexts, fields: ["org"] });
+  const inputs = dfutils.getInputs({ parameters, contexts, fields: ["org"] });
 
   // validation phase
   if (actionIncomplete) {
@@ -28,18 +28,18 @@ module.exports = async function listAdmins({ actionIncomplete, parameters, conte
     logger.error("Error: no handler to process remaining parameters during slot-filling process!");
     throw new BotLogicError("An error occurred while trying to process your request. Please try again later.");
   } else {
-    let org = await dfutils.obtainOrg({
+    const org = await dfutils.obtainOrg({
       inputOrg: inputs.org,
       fnName: "listadmins",
       invalidParam: "org"
     });
 
 
-    let admins = await cache.admins.getByOrgId(org.id);
-    let adminNames = admins.map(admin => admin.name);
-    let adminInfos = admins.map(admin => admin.name + " - " + admin.email);
+    const admins = await cache.admins.getByOrgId(org.id);
+    const adminNames = admins.map(admin => admin.name);
+    const adminInfos = admins.map(admin => admin.name + " - " + admin.email);
 
-    let { text, speech } = dfformat.truncateDoubleList({
+    const { text, speech } = dfformat.truncateDoubleList({
       text: `Your organization, <bold>${org.name}<bold>, has the following administrators:\n`,
       speech: `Your organization, ${org.name}, has the following administrators: `,
       fallback: `There are no administrators in the "${org.name}" organization!`,

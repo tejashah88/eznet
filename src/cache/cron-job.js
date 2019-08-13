@@ -24,7 +24,7 @@ function throwOnError429(err) {
 }
 
 async function populateData() {
-  let orgs = await utils.retryablePromise({
+  const orgs = await utils.retryablePromise({
     networkFunc: dashboard.organizations.list,
     errorHandler: throwOnError429
   });
@@ -32,9 +32,9 @@ async function populateData() {
   logger.info("Got the orgs!");
   await cache.orgs.setAll(orgs);
 
-  let allNets = [];
-  for (let org of orgs) {
-    let nets = await utils.retryablePromise({
+  const allNets = [];
+  for (const org of orgs) {
+    const nets = await utils.retryablePromise({
       networkFunc: dashboard.networks.list,
       errorHandler: throwOnError429
     }, org.id);
@@ -42,7 +42,7 @@ async function populateData() {
     await cache.networks.setByOrgId(org.id, nets);
     allNets.push(...nets);
 
-    let admins = await utils.retryablePromise({
+    const admins = await utils.retryablePromise({
       networkFunc: dashboard.admins.list,
       errorHandler: throwOnError429
     }, org.id);
@@ -50,8 +50,8 @@ async function populateData() {
     await cache.admins.setByOrgId(org.id, admins);
 
 
-    for (let net of nets) {
-      let devices = await utils.retryablePromise({
+    for (const net of nets) {
+      const devices = await utils.retryablePromise({
         networkFunc: dashboard.devices.list,
         errorHandler: throwOnError429
       }, net.id);
@@ -74,7 +74,7 @@ module.exports = async function scheduleCronJob() {
   }
 
   logger.info("creating job schedule");
-  let job = scheduleJob(constants.CACHE_CRON_JOB_STRING, () => populateData().catch(logger.error));
+  const job = scheduleJob(constants.CACHE_CRON_JOB_STRING, () => populateData().catch(logger.error));
 
   diehard.register(async done => {
     try {

@@ -25,12 +25,12 @@ const port = process.env.PORT || 8080;
 server.use(bodyParser.json());
 
 server.post("/chat", async (req, res) => {
-  let agent = new WebhookClient({ request: req, response: res });
+  const agent = new WebhookClient({ request: req, response: res });
   agent.actionIncomplete = !req.body.queryResult.allRequiredParamsPresent;
   agent.intentDetectionConfidence = req.body.queryResult.intentDetectionConfidence;
   logger.info(`Intent detection confidence: ${agent.intentDetectionConfidence}`);
 
-  let results = await processAction(agent);
+  const results = await processAction(agent);
   return res.json(results);
 });
 

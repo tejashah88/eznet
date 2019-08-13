@@ -44,9 +44,9 @@ const negativeExamples = getPhrases(path.join(__dirname, DIALOGFLOW_PHRASES_FILE
 
 function randomSplitArray(arr, ratio) {
   const minRequired = Math.round(arr.length * ratio);
-  let indicies = [];
+  const indicies = [];
   while (indicies.length < minRequired) {
-    let rndIndex = Math.floor(Math.random() * arr.length);
+    const rndIndex = Math.floor(Math.random() * arr.length);
     if (!indicies.includes(rndIndex))
       indicies.push(rndIndex);
   }

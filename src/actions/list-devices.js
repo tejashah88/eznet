@@ -10,7 +10,7 @@ const dfformat = require("../dfutils/formatting");
 const BotLogicError = require("../errors/BotLogicError");
 
 module.exports = async function listDevices({ actionIncomplete, parameters, contexts }) {
-  let inputs = dfutils.getInputs({ parameters, contexts, fields: ["network"] });
+  const inputs = dfutils.getInputs({ parameters, contexts, fields: ["network"] });
 
   // validation phase
   if (actionIncomplete) {
@@ -21,17 +21,17 @@ module.exports = async function listDevices({ actionIncomplete, parameters, cont
     logger.error("Error: no handler to process remaining parameters during slot-filling process!");
     throw new BotLogicError("An error occurred while trying to process your request. Please try again later.");
   } else {
-    let net = await dfutils.obtainNetwork({
+    const net = await dfutils.obtainNetwork({
       inputNet: inputs.network,
       fnName: "listdevices",
       invalidParam: "network"
     });
 
     // processing stage
-    let devices = await cache.devices.getByNetId(net.id);
-    let deviceNames = devices.map(device => device.name || device.model);
+    const devices = await cache.devices.getByNetId(net.id);
+    const deviceNames = devices.map(device => device.name || device.model);
 
-    let { text, speech } = dfformat.truncateList({
+    const { text, speech } = dfformat.truncateList({
       text: `Your network, <bold>${net.name}<bold>, has the following devices:\n`,
       speech: `Your network, ${net.name}, has the following devices: `,
       fallback: `There are no devices in the "${net.name}" network!`,

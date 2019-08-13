@@ -10,6 +10,6 @@ const CMD_EXPLANATIONS = {
 };
 
 module.exports = function explainFunction({ parameters }) {
-  let explanation = CMD_EXPLANATIONS[parameters.command];
+  const explanation = CMD_EXPLANATIONS[parameters.command];
   return { text: explanation, speech: explanation };
 };

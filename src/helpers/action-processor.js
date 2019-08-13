@@ -11,7 +11,7 @@ const cancelDetector = generateCancelDetector();
 // local error classes
 const BotLogicError = require("../errors/BotLogicError");
 
-let actionMap = {
+const actionMap = {
   listOrganizations: require("../actions/list-organizations"),
   listNetworks: require("../actions/list-networks"),
   listDevices: require("../actions/list-devices"),
@@ -54,15 +54,15 @@ module.exports = async function processAction(agent) {
       if (cancelDetector.wants2Cancel(agent.query)) {
         logger.info("User wanted to cancel an incompleted action during the 'any input allowed' slot-filling. See above logs for the actual action cancelled.");
         const cancelResponsePhrases = [ "Sure, cancelling", "All right, cancelled.", "Okay, cancelled." ];
-        let cancelResponse = cancelResponsePhrases[Math.floor(Math.random() * cancelResponsePhrases.length)];
+        const cancelResponse = cancelResponsePhrases[Math.floor(Math.random() * cancelResponsePhrases.length)];
 
-        let resetContextFields = [];
+        const resetContextFields = [];
         if (agent.parameters.org)
           resetContextFields.push("organization");
         if (agent.parameters.network)
           resetContextFields.push("network");
 
-        let cancelBotResponsePayload = {
+        const cancelBotResponsePayload = {
           text: cancelResponse,
           speech: cancelResponse,
           resetContextFields
@@ -75,7 +75,7 @@ module.exports = async function processAction(agent) {
 
       // process action via action map
       logger.info(`Executing action ${agent.action} from "${actualSource}"...`);
-      let results = await actionMap[agent.action]({
+      const results = await actionMap[agent.action]({
         actionIncomplete: agent.actionIncomplete,
         parameters: agent.parameters,
         contexts: contextTransformer(agent.contexts)

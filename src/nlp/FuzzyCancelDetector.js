@@ -25,8 +25,8 @@ module.exports = class FuzzyCancelDetector {
   }
 
   wants2Cancel(input) {
-    let finalResult = this.fuse.search(input)[0];
-    let finalPhrase = finalResult ? this.data.combined[finalResult.item] : null;
+    const finalResult = this.fuse.search(input)[0];
+    const finalPhrase = finalResult ? this.data.combined[finalResult.item] : null;
     return !!finalPhrase && this.data.positive.includes(finalPhrase);
   }
 };

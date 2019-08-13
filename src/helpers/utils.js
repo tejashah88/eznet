@@ -16,7 +16,7 @@ const isHeroku = require("is-heroku");
 
 // NOTE: entityContext is used for bot error reporting
 function fuseSearch(list, target, searchKey, entityContext = "entity") {
-  let fuseOptions = {
+  const fuseOptions = {
     shouldSort: true,
     tokenize: true,
     includeScore: true,
@@ -28,13 +28,13 @@ function fuseSearch(list, target, searchKey, entityContext = "entity") {
     keys: [searchKey]
   };
 
-  let fuse = new Fuse(list, fuseOptions);
-  let results = fuse.search(target);
+  const fuse = new Fuse(list, fuseOptions);
+  const results = fuse.search(target);
 
   // we are looking for exactly one candidate
   if (results.length) {
-    let lowestScore = results[0].score;
-    let possibleCandidates = results.filter(result => lowestScore === result.score);
+    const lowestScore = results[0].score;
+    const possibleCandidates = results.filter(result => lowestScore === result.score);
     if (possibleCandidates.length > 1) {
       // too many canididates with the same lowest score
       throw new FuzzySearchError({
@@ -65,8 +65,8 @@ function arr2obj(arr, key = "id", valueGen = cur => cur.name) {
 // this is used for translating json for redis w/o JSON.stringify
 function obj2arr(obj, key = "id", valueAppend = value => ({ name: value })) {
   return Object.entries(obj).map(entry => {
-    let initialObj = { [key]: entry[0] };
-    let obj = Object.assign(initialObj, valueAppend(entry[1]));
+    const initialObj = { [key]: entry[0] };
+    const obj = Object.assign(initialObj, valueAppend(entry[1]));
     return obj;
   });
 }
@@ -75,7 +75,7 @@ const isEmptyObject = obj => !Object.entries(obj).length;
 
 // this is used for network calls to the Meraki API
 function retryablePromise(opts, ...args) {
-  let { networkFunc, errorHandler, retries = 10, minTimeout = 1000 } = opts;
+  const { networkFunc, errorHandler, retries = 10, minTimeout = 1000 } = opts;
   return pRetry(() => networkFunc(...args).catch(errorHandler), { retries, minTimeout });
 }
 

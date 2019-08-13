@@ -16,7 +16,7 @@ const bytes = require("bytes");
 const dashboard = require("node-meraki-dashboard")(process.env.MERAKI_API_KEY);
 
 module.exports = async function dataUsage({ actionIncomplete, parameters, contexts }) {
-  let inputs = dfutils.getInputs({ parameters, contexts, fields: ["network", "time-duration"] });
+  const inputs = dfutils.getInputs({ parameters, contexts, fields: ["network", "time-duration"] });
 
   // validation phase
   if (actionIncomplete) {
@@ -30,7 +30,7 @@ module.exports = async function dataUsage({ actionIncomplete, parameters, contex
     logger.error("Error: no handler to process remaining parameters during slot-filling process!");
     throw new BotLogicError("An error occurred while trying to process your request. Please try again later.");
   } else {
-    let net = await dfutils.obtainNetwork({
+    const net = await dfutils.obtainNetwork({
       inputNet: inputs.network,
       fnName: "datausage",
       invalidParam: "network",
@@ -48,8 +48,8 @@ module.exports = async function dataUsage({ actionIncomplete, parameters, contex
     }
 
     // processing phase
-    let totalSeconds = dfutils.calcTotalSeconds(inputs["time-duration"]);
-    let trafficData = await utils.retryablePromise({
+    const totalSeconds = dfutils.calcTotalSeconds(inputs["time-duration"]);
+    const trafficData = await utils.retryablePromise({
       networkFunc: dashboard.networks.getTrafficData,
       errorHandler: err => ({ error: err.data.errors.join(" ") })
     }, net.id, { timespan : totalSeconds });
@@ -57,7 +57,7 @@ module.exports = async function dataUsage({ actionIncomplete, parameters, contex
     if (trafficData.error)
       throw new BotLogicError(trafficData.error).setResetContextFields("network");
 
-    let timeDurText = dfformat.displayableTimeDuration(inputs["time-duration"]);
+    const timeDurText = dfformat.displayableTimeDuration(inputs["time-duration"]);
 
     if (!trafficData || !trafficData.length) {
       throw new BotLogicError(
@@ -80,19 +80,19 @@ module.exports = async function dataUsage({ actionIncomplete, parameters, contex
 
     topDataUsage = topDataUsage.slice(0, 10);
 
-    let pie = new quiche("pie");
+    const pie = new quiche("pie");
     pie.setHostname("image-charts.com");
     pie.setWidth(700);
     pie.setHeight(700);
 
     let clientCount = 0;
-    let totalData = {
+    const totalData = {
       sent: 0,
       received: 0,
       combined: 0
     };
 
-    for (let { numClients, data, app, source} of topDataUsage) {
+    for (const { numClients, data, app, source} of topDataUsage) {
       clientCount += numClients;
 
       totalData.sent += data.sent;
@@ -103,22 +103,22 @@ module.exports = async function dataUsage({ actionIncomplete, parameters, contex
     }
 
     // handling edge case where having only one data point breaks chart
-    let imageUrl = pie.getUrl(true).replace(/(chd=t%3A(\d+(\.\d+)?))&/g,"$1%2C0&");
+    const imageUrl = pie.getUrl(true).replace(/(chd=t%3A(\d+(\.\d+)?))&/g,"$1%2C0&");
 
-    let bytesOpts = { unitSeparator: " " };
-    let bytesTotal = bytes(totalData.combined, bytesOpts);
-    let avgByteTotalClient = bytes(totalData.combined / clientCount, bytesOpts);
-    let bytesSent = bytes(totalData.sent, bytesOpts);
-    let bytesReceived = bytes(totalData.received, bytesOpts);
+    const bytesOpts = { unitSeparator: " " };
+    const bytesTotal = bytes(totalData.combined, bytesOpts);
+    const avgByteTotalClient = bytes(totalData.combined / clientCount, bytesOpts);
+    const bytesSent = bytes(totalData.sent, bytesOpts);
+    const bytesReceived = bytes(totalData.received, bytesOpts);
 
     // response phase
-    let text = `
+    const text = `
       <o> Total data usage with ${clientCount} clients over ${timeDurText}: ${bytesTotal}
       <o> Average data usage over ${timeDurText}: ${avgByteTotalClient} per client
       <o> Total data sent over ${timeDurText}: ${bytesSent}
       <o> Total data received over ${timeDurText}: ${bytesReceived}
     `;
-    let speech = [
+    const speech = [
       `The total data usage with ${clientCount} clients over ${timeDurText} was ${bytesTotal}.`,
       `On average, most clients used about ${avgByteTotalClient}.`,
       `The total data sent over the same time period was ${bytesSent} and the total data received was ${bytesReceived}.`
